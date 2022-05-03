@@ -1,0 +1,19 @@
+---
+clientupdater_systems:
+  - name: ownCloud
+
+    # Make unstable/beta channel fallback to stable for now
+    alias_platforms:
+      - "win32msi-unstable=win32msi"
+      - "win64msi-unstable=win64msi"
+      - "macos-unstable=macos"
+      - "linux-unstable=linux"
+
+    platforms:
+      - name: linux-appimage-x86_64
+        # intentionally using an absurdly high version number to force an update
+        current_version: "2000.10.0.6519"
+        current_version_string: "ownCloud Client 2.10.0 (build 65190)"
+        update_url: "https://owncloud.com/desktop-app/"
+        download_url: "https://download.owncloud.com/desktop/ownCloud/stable/2.10.1.7389/linux-appimage/ownCloud-2.10.1.7389.AppImage.zsync"
+        pub_date: "2022-01-17"
