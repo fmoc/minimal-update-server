@@ -4,6 +4,12 @@
 
 This project uses [Poetry](https://python-poetry.org) to manage its dependencies. Please refer to the [Poetry installation guide](https://python-poetry.org/docs/#installation)
 
+After installing Poetry, you need to create the [virtual environment](https://docs.python.org/3/library/venv.html) and install the dependencies:
+
+```sh
+> poetry install
+```
+
 
 ## Configuration
 
@@ -19,8 +25,6 @@ Running the server is easy:
 ```shell
 > poetry run python server.py clientupdater.yml
 ```
-
-On the first run, Poetry automatically sets up a [virtual environment](https://docs.python.org/3/library/venv.html) and installs all the dependencies into it, then runs the server script.
 
 The development server will be spawned on http://127.0.0.1:5000.
 
